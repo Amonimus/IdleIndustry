@@ -1,0 +1,12 @@
+[
+{"name" : "Explore", "class" : "Factory", "sprite" : "lense.png"},
+{"name" : "Craft", "class" : "Factory", "sprite" : "factory.png"},
+{"name" : "Consider", "class" : "Factory", "sprite" : "factory.png"},
+{"name" : "Destroy", "class" : "Factory", "sprite" : "factory.png"},
+{"name" : "Settler", "class" : "Resource", "sprite" : "person.png"},
+{"name" : "Unexplored Land", "class" : "Text", "sprite" : "text.png"},
+{"name" : "Readme.txt", "class" : "Text", "sprite" : "text.png"},
+{"name" : "Mountain", "class" : "Factory", "sprite" : "factory.png"},
+{"name" : "Forest", "class" : "Factory", "sprite" : "factory.png"},
+{"name" : "Hut", "class" : "Factory", "sprite" : "factory.png"},
+]

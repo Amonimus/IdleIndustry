@@ -1,0 +1,76 @@
+More crafting control, no automatic recepie selection.
+Stackable window contents, like Tkinter
+
+
+Make putting items in nested factories
+
+== Stone Age ==
+* Coal
+* Leaves
+* Stick
+* Spear
+* Fish
+* Wood
+
+== Bronze Age ==
+* Copper Ore
+* Water bucket
+* Iron
+* Wool
+* Rope
+* Farm
+
+== Anicent Age ==
+* Silver
+* Fishing boat
+* Furnace
+* Stone well
+* Totem
+* Concrete
+
+== Classical Age ==
+* Gold coin
+* Fabric
+* Temple
+* Library
+* Market
+* Steel
+
+== Feudal Age ==
+* Castle
+* Screw
+
+== Medieval Age ==
+* Sulfur
+* Quartz
+
+== Enlightement Age ==
+* Steam
+* Rifle
+
+== Industrial Age ==
+* Wire
+* Electricity
+* Aluminium
+* Motor
+* Battery
+
+== Petroliom Age ==
+* Oil
+* Cable
+* Plastic
+* Rubber
+* Water bottle
+
+== Digital Age ==
+* Computer
+* Uranium Ore
+* Nuclear fuel
+
+== Space Age ==
+* Data
+
+== Futuristic Age ==
+* Quantum Computer
+* World Goverment
+* Artifical Intelligence
