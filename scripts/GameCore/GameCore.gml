@@ -12,6 +12,7 @@ function GameCore() constructor {
 	icons = ds_map_create()
 	recepies = ds_map_create()
 	strings = ds_map_create()
+	goals = []
 //system
 	step = function(){
 		if first_step {
@@ -115,6 +116,13 @@ function GameCore() constructor {
 			ds_map_add(strings, _data[i].name, _data[i])
 		}
 	}
+	LoadGoals = function(){
+		var _data = readfile("goals.json")
+		for (i=0; i<array_length(_data); i++){
+			_data[i].current = 0
+		}
+		goals = _data
+	}
 	LoadGame = function(){
 		if file_exists("SAV"+string(global.current_game_id)+".sav") {
 			var _filename = "SAV"+string(global.current_game_id)+".sav"
@@ -211,6 +219,7 @@ function GameCore() constructor {
 		LoadResources()
 		LoadRecepies()
 		LoadStrings()
+		LoadGoals()
 		LoadGame()
 	}
 	first_step = true
