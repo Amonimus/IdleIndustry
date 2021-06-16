@@ -1,8 +1,9 @@
 More crafting control, no automatic recepie selection.
 Stackable window contents, like Tkinter
-
-
+Cookie Clicker mode
 Make putting items in nested factories
+Transport system
+Resizing window superfast pushes the window
 
 == Stone Age ==
 * Coal

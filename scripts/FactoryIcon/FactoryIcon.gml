@@ -3,7 +3,7 @@ function FactoryIcon(_x, _y, _inner_text, _count) : ContainerIcon(_x, _y, _inner
 	progress = 0
 	notification = false
 	recepies = core.recepies[? inner_text]
-	working_recepie = noone
+	working_recepie = -1
 //system
 	step = function(){
 		_openableicon()
@@ -24,7 +24,7 @@ function FactoryIcon(_x, _y, _inner_text, _count) : ContainerIcon(_x, _y, _inner
 	}
 //methods
 	populate = function(){
-		working_recepie = noone
+		working_recepie = -1
 		for(var rep=0; rep<array_length(recepies); rep++){
 			var enough = true
 			for(var inp=0; inp<array_length(recepies[rep].inputs); inp++){
@@ -49,23 +49,23 @@ function FactoryIcon(_x, _y, _inner_text, _count) : ContainerIcon(_x, _y, _inner
 				}
 			}
 			if enough {
-				working_recepie = recepies[rep]
+				working_recepie = rep
 			}
 		}
 	}
 	build = function(){
-		if working_recepie == noone {
+		if working_recepie == -1 {
 			progress = 0
 		} else {
 			var rate = 0
-			for (var in = 0; in < array_length(working_recepie.inputs); in++){
-				rate = floor(working_recepie.inputs[in].here.count/working_recepie.inputs[in].need)
+			for (var in = 0; in < array_length(recepies[working_recepie].inputs); in++){
+				rate = floor(recepies[working_recepie].inputs[in].here.count/recepies[working_recepie].inputs[in].need)
 			}
 			if rate > count {
 				rate = count
 			}
 			if progress < 100 {
-				progress += (100/working_recepie.steps)*rate
+				progress += (100/recepies[working_recepie].steps)*rate
 			} else {
 				progress = 0
 				notification = true
@@ -74,24 +74,23 @@ function FactoryIcon(_x, _y, _inner_text, _count) : ContainerIcon(_x, _y, _inner
 		}
 	}
 	complete = function(){
-		if working_recepie != noone {
-			for (var in = 0; in < array_length(working_recepie.inputs); in++){
-				if working_recepie.inputs[in].consumable == true {
-					working_recepie.inputs[in].here.count -= working_recepie.inputs[in].need
+		for (var in = 0; in < array_length(recepies[working_recepie].inputs); in++){
+			if recepies[working_recepie].inputs[in].consumable == true {
+				recepies[working_recepie].inputs[in].here.count -= recepies[working_recepie].inputs[in].need
+			}
+		}
+		for (var out = 0; out < array_length(recepies[working_recepie].outputs); out++){
+			recepies[working_recepie].outputs[out].here = noone
+			for (var ch = 0; ch < array_length(children); ch++){
+				if children[ch].inner_text == recepies[working_recepie].outputs[out].name {
+					recepies[working_recepie].outputs[out].here = children[ch]
 				}
 			}
-			for (var out = 0; out < array_length(working_recepie.outputs); out++){
-				for (var ch = 0; ch < array_length(children); ch++){
-					if children[ch].inner_text == working_recepie.outputs[out].name {
-						working_recepie.outputs[out].here = children[ch]
-					}
-				}
-				if working_recepie.outputs[out].here == noone {
-					var new_item = core.newicon(x, y, working_recepie.outputs[out].name, working_recepie.outputs[out].count)
-					self.link(new_item)
-				} else {
-					working_recepie.outputs[out].here.count += working_recepie.outputs[out].count
-				}
+			if recepies[working_recepie].outputs[out].here == noone {
+				var new_item = core.newicon(x, y, recepies[working_recepie].outputs[out].name, recepies[working_recepie].outputs[out].count)
+				self.link(new_item)
+			} else {
+				recepies[working_recepie].outputs[out].here.count += recepies[working_recepie].outputs[out].count
 			}
 		}
 	}

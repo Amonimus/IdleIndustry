@@ -8,7 +8,7 @@
         {"name": "Mountain", "count": 1},
         {"name": "Forest", "count": 1},
     ],
-    "steps": 200
+    "steps": 500
     }]
 },
 {"name": "Consider",
@@ -153,7 +153,7 @@
 	], "outputs": [
         {"name": "Stick", "count": 1},
     ],
-    "steps": 20
+    "steps": 200
     },{
 	"inputs": [
         {"name": "Settler", "need": 1, "consumable": false},
@@ -161,7 +161,7 @@
 	], "outputs": [
         {"name": "Wood", "count": 1},
     ],
-    "steps": 100
+    "steps": 400
     },{
 	"inputs": [
         {"name": "Settler", "need": 1, "consumable": false},
@@ -169,7 +169,7 @@
 	], "outputs": [
         {"name": "Meat", "count": 1},
     ],
-    "steps": 200
+    "steps": 400
     }]
 },
 {"name": "Mountain",
@@ -179,7 +179,7 @@
 	], "outputs": [
         {"name": "Rock", "count": 1},
     ],
-    "steps": 20
+    "steps": 200
     },{
 	"inputs": [
         {"name": "Settler", "need": 1, "consumable": false},
@@ -187,7 +187,7 @@
 	], "outputs": [
         {"name": "Stone", "count": 1},
     ],
-    "steps": 200
+    "steps": 400
     }]
 },
 {"name": "Hut",

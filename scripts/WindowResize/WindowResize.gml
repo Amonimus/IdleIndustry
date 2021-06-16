@@ -34,6 +34,8 @@ function WindowResize(_x, _y, _parent) : Draggable(_x, _y) constructor {
 		parent.width = x+width-parent.x
 		parent.height = y+height-parent.y
 		parent.close_btn.move()
+		parent.hint_icon.move()
+		parent.header.width = parent.width-parent.close_btn.width-parent.hint_icon.width
 	}
 	postsnap = function(){
 		if !fit_lock {

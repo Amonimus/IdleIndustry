@@ -49,16 +49,16 @@ function StartMenu(_x, _y) : Button(_x, _y) constructor {
 		open = false
 	}
 //on_create
-	array_push(subbuttons, new Shutdown(-64, y))
-	array_push(subbuttons, new QuestButton(-64, y))
-	array_push(subbuttons, new Button(-64, y, "Recepies"))
-	array_push(subbuttons, new Button(-64, y, "Options"))
-	array_push(subbuttons, new Fullscreen(-64, y))
-	array_push(subbuttons, new Resolution(-64, y, 640, 320))
-	array_push(subbuttons, new Resolution(-64, y, 640, 640))
-	array_push(subbuttons, new Resolution(-64, y, 960, 640))
-	array_push(subbuttons, new Resolution(-64, y, 960, 960))
-	array_push(subbuttons, new Resolution(-64, y, 1280, 960))
-	array_push(subbuttons, new Resolution(-64, y, 1600, 960))
-	array_push(subbuttons, new VolumeButton(-64, y))
+	array_push(subbuttons, new Shutdown(-64, -64))
+	array_push(subbuttons, new QuestButton(-64, -64))
+	array_push(subbuttons, new Button(-64, -64, "Recepies"))
+	array_push(subbuttons, new Button(-64, -64, "Options"))
+	array_push(subbuttons, new Fullscreen(-64, -64))
+	array_push(subbuttons, new Resolution(-64, -64, 640, 320))
+	array_push(subbuttons, new Resolution(-64, -64, 640, 640))
+	array_push(subbuttons, new Resolution(-64, -64, 960, 640))
+	array_push(subbuttons, new Resolution(-64, -64, 960, 960))
+	array_push(subbuttons, new Resolution(-64, -64, 1280, 960))
+	array_push(subbuttons, new Resolution(-64, -64, 1600, 960))
+	array_push(subbuttons, new VolumeButton(-64, -64))
 }

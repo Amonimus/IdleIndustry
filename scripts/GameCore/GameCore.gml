@@ -120,6 +120,7 @@ function GameCore() constructor {
 		var _data = readfile("goals.json")
 		for (i=0; i<array_length(_data); i++){
 			_data[i].current = 0
+			_data[i].complete = false
 		}
 		goals = _data
 	}
