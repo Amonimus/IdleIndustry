@@ -61,16 +61,37 @@ function FactoryIcon(_x, _y, _inner_text, _count) : ContainerIcon(_x, _y, _inner
 			for (var in = 0; in < array_length(recepies[working_recepie].inputs); in++){
 				rate = floor(recepies[working_recepie].inputs[in].here.count/recepies[working_recepie].inputs[in].need)
 			}
-			if rate > count {
-				rate = count
-			}
+			//if rate > count {
+			//	rate = count
+			//}
 			if progress < 100 {
 				progress += (100/recepies[working_recepie].steps)*rate
 			} else {
 				progress = 0
 				notification = true
 				complete()
+				
 			}
+		}
+	}
+	addrecepies = function(){
+		var rec_string = inner_text+": "
+		for (var in = 0; in < array_length(recepies[working_recepie].inputs); in++){
+			rec_string += recepies[working_recepie].inputs[in].name
+			rec_string += " x"
+			rec_string += string(recepies[working_recepie].inputs[in].need)
+			rec_string += ", "
+		}
+		rec_string += "= "
+		for (var out = 0; out < array_length(recepies[working_recepie].outputs); out++){
+			rec_string += recepies[working_recepie].outputs[out].name
+			rec_string += " x"
+			rec_string += string(recepies[working_recepie].outputs[out].count)
+			rec_string += ", "
+		}
+		rec_string += ";\n"
+		if array_find_index(core.known_recepies, rec_string) == -1 {
+			array_push(core.known_recepies, rec_string)
 		}
 	}
 	complete = function(){

@@ -1,0 +1,17 @@
+[
+{"name" : "Cookie", "class" : "Resource", "sprite" : "icon.png"},
+{"name" : "Grandma", "class" : "Resource", "sprite" : "icon.png"},
+{"name" : "Purchase", "class" : "Action", "sprite" : "icon.png"},
+{"name" : "Bakery", "class" : "Factory", "sprite" : "icon.png"},
+{"name" : "Farm", "class" : "Factory", "sprite" : "icon.png"},
+{"name" : "Mine", "class" : "Factory", "sprite" : "icon.png"},
+{"name" : "Factory", "class" : "Factory", "sprite" : "icon.png"},
+{"name" : "Bank", "class" : "Factory", "sprite" : "icon.png"},
+{"name" : "Temple", "class" : "Factory", "sprite" : "icon.png"},
+{"name" : "Wizard Tower", "class" : "Factory", "sprite" : "icon.png"},
+{"name" : "Space Station", "class" : "Factory", "sprite" : "icon.png"},
+{"name" : "Alchemy Lab", "class" : "Factory", "sprite" : "icon.png"},
+{"name" : "Portal", "class" : "Factory", "sprite" : "icon.png"},
+{"name" : "Time Machine", "class" : "Factory", "sprite" : "icon.png"},
+{"name" : "Antimatter Condenser", "class" : "Factory", "sprite" : "icon.png"},
+]

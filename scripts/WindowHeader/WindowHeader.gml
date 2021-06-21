@@ -13,7 +13,7 @@ function WindowHeader(_x, _y, _parent) : Draggable(_x, _y) constructor {
 		if dragging {
 			parent.move()
 		}
-		width = parent.width-parent.close_btn.width-parent.hint_icon.width
+		width = parent.width-parent.close_btn.width
 	}
 	draw = function(){
 		draw_rect(x,y,x+width,y+height,c_white,c_black)

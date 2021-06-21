@@ -28,4 +28,5 @@ function ContainerIcon(_x, _y, _inner_text, _count) : OpenableIcon(_x, _y, _inne
 		}
 		destroy()
 	}
+//on_create
 }

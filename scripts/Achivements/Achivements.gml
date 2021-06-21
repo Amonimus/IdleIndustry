@@ -18,16 +18,16 @@ function Achievements(_x, _y) : GameObject(_x, _y) constructor {
 	]
 //system
 	step = function(){
-		for (var g=0; g<array_length(core.goals); g++){
-			for (var i=0; i<array_length(core.goals[g].inputs); i++){
-				if !core.goals[g].complete {
-					core.goals[g].inputs[i].current = 0
+		for (var g=0; g<array_length(core.progress.goals); g++){
+			for (var i=0; i<array_length(core.progress.goals[g].inputs); i++){
+				if !core.progress.goals[g].complete {
+					core.progress.goals[g].inputs[i].current = 0
 					for (var l=0; l<array_length(core.objects); l++){
 						for (var ob=0; ob<array_length(core.objects[l]); ob++){
 							var test_obj = core.objects[l][ob]
 							if test_obj.object_type == "Icon" {
-								if test_obj.inner_text = core.goals[g].inputs[i].name {
-									core.goals[g].inputs[i].current += test_obj.count
+								if test_obj.inner_text = core.progress.goals[g].inputs[i].name {
+									core.progress.goals[g].inputs[i].current += test_obj.count
 								}
 							}
 						}
@@ -35,20 +35,19 @@ function Achievements(_x, _y) : GameObject(_x, _y) constructor {
 				}
 			}
 		}
-		for (var g=0; g<array_length(core.goals); g++){
-			if !core.goals[g].complete {
-				for (var i=0; i<array_length(core.goals[g].inputs); i++){
-					if core.goals[g].inputs[i].current >= core.goals[g].inputs[i].need {
-						for (var o=0; o<array_length(core.goals[g].outputs); o++){
-							core.newicon(96+32*o,96,core.goals[g].outputs[o].name,core.goals[g].outputs[o].count)
+		for (var g=0; g<array_length(core.progress.goals); g++){
+			if !core.progress.goals[g].complete {
+				for (var i=0; i<array_length(core.progress.goals[g].inputs); i++){
+					if core.progress.goals[g].inputs[i].current >= core.progress.goals[g].inputs[i].need {
+						for (var o=0; o<array_length(core.progress.goals[g].outputs); o++){
+							core.newicon(96+32*o,96,core.progress.goals[g].outputs[o].name,core.progress.goals[g].outputs[o].count)
 						}
-						core.goals[g].complete = true
+						core.progress.goals[g].complete = true
 					}
 				}
 			}
 		}
 	}
 //methods
-
 //on_create
 }

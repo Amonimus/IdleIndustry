@@ -196,17 +196,6 @@
     },{
 	"inputs": [
         {"name": "Caveman", "need": 1, "consumable": false},
-        {"name": "Stockpile Blueprint", "need": 1, "consumable": false},
-        {"name": "Rock", "need": 30, "consumable": true},
-        {"name": "Stick", "need": 20, "consumable": true},
-        {"name": "Torch", "need": 2, "consumable": true},
-	], "outputs": [
-        {"name": "Stockpile", "count": 1},
-    ],
-    "steps": 500
-    },{
-	"inputs": [
-        {"name": "Caveman", "need": 1, "consumable": false},
         {"name": "Hut Blueprint", "need": 1, "consumable": false},
         {"name": "Stone", "need": 20, "consumable": true},
         {"name": "Wood", "need": 30, "consumable": true},
@@ -276,7 +265,7 @@
     "recepies":[{
 	"inputs": [
         {"name": "Caveman", "need": 2, "consumable": false},
-        {"name": "Meat", "need": 20, "consumable": true},
+        {"name": "Meat", "need": 10, "consumable": true},
 	], "outputs": [
         {"name": "Caveman", "count": 1},
     ],

@@ -4,6 +4,10 @@ Cookie Clicker mode
 Make putting items in nested factories
 Transport system
 Resizing window superfast pushes the window
+Scrolling in windows
+Recepies window casues lag
+Icon names are too big
+Sometimes icons are replaced by canvas
 
 == Stone Age ==
 * Coal

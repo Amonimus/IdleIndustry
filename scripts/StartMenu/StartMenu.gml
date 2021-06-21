@@ -33,7 +33,7 @@ function StartMenu(_x, _y) : Button(_x, _y) constructor {
 		y = room_height-height
 		for (var sb=0; sb<array_length(subbuttons); sb++){
 			subbuttons[sb].x = x
-			subbuttons[sb].y = y-(16*(sb+1))
+			subbuttons[sb].y = y-(17*(sb+1))
 		}
 	}
 	show_subbuttons = function(){
@@ -51,7 +51,7 @@ function StartMenu(_x, _y) : Button(_x, _y) constructor {
 //on_create
 	array_push(subbuttons, new Shutdown(-64, -64))
 	array_push(subbuttons, new QuestButton(-64, -64))
-	array_push(subbuttons, new Button(-64, -64, "Recepies"))
+	array_push(subbuttons, new RecepiesButton(-64, -64))
 	array_push(subbuttons, new Button(-64, -64, "Options"))
 	array_push(subbuttons, new Fullscreen(-64, -64))
 	array_push(subbuttons, new Resolution(-64, -64, 640, 320))

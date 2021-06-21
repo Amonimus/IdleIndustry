@@ -14,6 +14,9 @@ function TextContainer (_x, _y, _parent, _inner_text) : GameObject(_x, _y) const
 		draw_text_ext_transformed(0, 0, inner_text, 16, width, 1, 1, 0)
 		surface_reset_target()
 		draw_surface(surf, x, y)
+		if height*width < string_width(inner_text)*string_height(inner_text) {
+			draw_sprite(plus_spr,0,x+width-16,y+height-16)
+		}
 	}
 //methods
 	move = function(){

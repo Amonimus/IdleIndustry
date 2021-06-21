@@ -9,6 +9,5 @@
 {"name" : "Mountain", "class" : "Factory", "sprite" : "factory.png"},
 {"name" : "Forest", "class" : "Factory", "sprite" : "factory.png"},
 {"name" : "Coal Mine", "class" : "Factory", "sprite" : "factory.png"},
-{"name" : "Stockpile", "class" : "Container", "sprite" : "container.png"},
 {"name" : "Hut", "class" : "Factory", "sprite" : "factory.png"},
 ]

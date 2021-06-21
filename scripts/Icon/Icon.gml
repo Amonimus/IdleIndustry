@@ -53,19 +53,19 @@ function Icon(_x, _y, _inner_text, _count) : Draggable(_x, _y) constructor {
 		draw_set_valign(fa_middle)
 		if display_mode == 1 {
 			draw_set_halign(fa_center)
-			draw_text_outlined(x+(width/2), y+height+8, inner_text, color, c_black)
+			draw_text_outlined(x+(width/2), y+height+8, 3*width, inner_text, color, c_black)
 		} else {
 			draw_set_halign(fa_left)
-			draw_text_outlined(x+width+8, y+(height/2), inner_text, color, c_black)
+			draw_text_outlined(x+width+8, y+(height/2), 3*width, inner_text, color, c_black)
 		}		
 		if count > 1 {
 			draw_set_halign(fa_center)
-			draw_text_outlined(x+width, y+height, string(count), c_white, c_black)			
+			draw_text_outlined(x+width, y+height, 1000, string(count), c_white, c_black)			
 		}
 		debug("")
 	}
 	debug = function(_str){
-		draw_text_outlined(x+width, y, _str, c_red, c_green)	
+		draw_text_outlined(x+width, y, 4*width, _str, c_red, c_green)	
 	}
 	link = function(_icon){
 		array_push(children, _icon)
@@ -127,7 +127,7 @@ function Icon(_x, _y, _inner_text, _count) : Draggable(_x, _y) constructor {
 							count += test_obj.count
 							test_obj.destroy()
 						} else {
-							if test_obj.icon_class == "Container" or test_obj.icon_class == "Factory" {
+							if test_obj.icon_class == "Container" or test_obj.icon_class == "Factory" or test_obj.icon_class == "Action" {
 								if array_find_index(test_obj.children, self) == -1 {
 									test_obj.link(self)
 								}
@@ -159,9 +159,9 @@ function Icon(_x, _y, _inner_text, _count) : Draggable(_x, _y) constructor {
 	}
 //on_create
 	var default_sprite = true
-	if ds_map_exists(core.icons, inner_text){
-		icon_class = core.icons[? inner_text].class
-		var dir = working_directory + "/sprites/" + core.icons[? inner_text].sprite
+	if ds_map_exists(core.icon_data, inner_text){
+		icon_class = core.icon_data[? inner_text].class
+		var dir = working_directory + "/sprites/" + core.icon_data[? inner_text].sprite
 		if file_exists(dir){
 			sprite = sprite_add(dir,0,0,0,0,0)
 			default_sprite = false

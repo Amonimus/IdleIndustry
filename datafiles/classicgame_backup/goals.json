@@ -17,16 +17,5 @@
         {"name": "Coal", "need": 10},
 	], "outputs": [
         {"name": "Stone Blueprint 5?", "count": 1},
-	]},
-    {"inputs": [
-        {"name": "Torch", "need": 5},
-	], "outputs": [
-        {"name": "Stone Blueprint 6?", "count": 1},
-        {"name": "Stone Blueprint 7?", "count": 1},
-	]},
-    {"inputs": [
-        {"name": "Caveman", "need": 10},
-	], "outputs": [
-        {"name": "Trophy", "count": 1},
 	]}
 ]

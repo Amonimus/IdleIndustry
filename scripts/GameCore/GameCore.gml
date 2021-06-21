@@ -9,10 +9,10 @@ function GameCore() constructor {
 	desktop_layer = []
 	hidden_layer = []
 	objects = [desktop_layer, window_layer, gui_layer, hold_layer, cursor_layer]
-	icons = ds_map_create()
+	icon_data = ds_map_create()
 	recepies = ds_map_create()
 	strings = ds_map_create()
-	goals = []
+	progress = {goals : [], known_recepies : []}
 //system
 	step = function(){
 		if first_step {
@@ -93,10 +93,8 @@ function GameCore() constructor {
 	LoadResources = function(){
 		var _data = readfile("icons.json")
 		for (i=0; i<array_length(_data); i++){
-			ds_map_add(icons, _data[i].name, _data[i])
+			ds_map_add(icon_data, _data[i].name, _data[i])
 		}
-	}
-	LoadRecepies = function(){
 		var _data = readfile("recepies.json")
 		for (i=0; i<array_length(_data); i++){
 			for (j=0; j<array_length(_data[i].recepies); j++){
@@ -109,20 +107,10 @@ function GameCore() constructor {
 			}
 			ds_map_add(recepies, _data[i].name, _data[i].recepies)
 		}
-	}
-	LoadStrings = function(){
 		var _data = readfile("strings.json")
 		for (i=0; i<array_length(_data); i++){
 			ds_map_add(strings, _data[i].name, _data[i])
 		}
-	}
-	LoadGoals = function(){
-		var _data = readfile("goals.json")
-		for (i=0; i<array_length(_data); i++){
-			_data[i].current = 0
-			_data[i].complete = false
-		}
-		goals = _data
 	}
 	LoadGame = function(){
 		if file_exists("SAV"+string(global.current_game_id)+".sav") {
@@ -135,6 +123,16 @@ function GameCore() constructor {
 		}
 		var _data = readfile(_filename)
 		settings = _data.settings
+		if _filename == "default.sav" {
+			var _goalfile = readfile("goals.json")
+			for (i=0; i<array_length(_goalfile); i++){
+				_goalfile[i].current = 0
+				_goalfile[i].complete = false
+			}
+			progress.goals = _goalfile
+		} else {
+			progress = _data.progress
+		}
 		changeScreen(settings.x_resolution, settings.y_resolution, false)
 		fullscreen(false)
 		volume(false)
@@ -149,13 +147,13 @@ function GameCore() constructor {
 	}
 	SaveGame = function(){
 		var _icons = []
-		var _id = 1
+		var _id = 0
 		var _temp = []
 		for (var i=0; i<array_length(objects); i++){
 			for (var j=0; j<array_length(objects[i]); j++){
 				var object = objects[i][j]
-				array_push(_temp, object)
 				if object.object_type = "Icon" {
+					array_push(_temp, object)
 					array_push(_icons, {id: _id, name: object.inner_text, x: object.x, y: object.y, count: object.count, parent: object.parent})
 					_id++
 				}
@@ -170,7 +168,7 @@ function GameCore() constructor {
 				}
 			}
 		}
-		var _save = {settings: settings, icons: _icons, time: timer.time}
+		var _save = {settings: settings, icons: _icons, time: timer.time, progress: progress}
 		var _data = json_stringify(_save)
 		var _buffer = buffer_create(string_byte_length(_data)+1, buffer_fixed, 1)
 		buffer_write(_buffer, buffer_string, _data)
@@ -178,8 +176,8 @@ function GameCore() constructor {
 		buffer_delete(_buffer)
 	}
 	newicon = function(_x, _y, _name, _count){
-		if ds_map_exists(icons, _name){
-			var new_class = icons[? _name].class
+		if ds_map_exists(icon_data, _name){
+			var new_class = icon_data[? _name].class
 		} else {
 			var new_class = "Resource"
 		}
@@ -197,7 +195,7 @@ function GameCore() constructor {
 				var _icon = new FactoryIcon(_x, _y, _name, _count)
 				break
 			case "Action":
-				var _icon = new Icon(_x, _y, _name, _count)
+				var _icon = new FactoryIcon(_x, _y, _name, _count)
 				break
 			default:
 				var _icon = new Icon(_x, _y, _name, _count)
@@ -216,11 +214,8 @@ function GameCore() constructor {
 		add_element(gui_layer, new StartMenu(32, 64))
 		add_element(gui_layer, new Achievements(0, 0))
 		add_element(gui_layer, timer)
-		add_element(gui_layer, new Logo(512, 0))
+		add_element(desktop_layer, new Logo(512, 0))
 		LoadResources()
-		LoadRecepies()
-		LoadStrings()
-		LoadGoals()
 		LoadGame()
 	}
 	first_step = true

@@ -1,0 +1,11 @@
+{"time": 0,
+"settings": {"fullscreen": false,
+    "volume": 1,
+    "x_resolution": 960,
+    "y_resolution": 640}
+, "icons": [
+    {"id" : 1, "name" : "Bakery", "x" : 32, "y" : 32, "count" : 1, "parent" : -4},
+    {"id" : 2, "name" : "Grandma", "x" : 32, "y" : 80, "count" : 1, "parent" : -4},
+],
+"progress": {"goals": [], "known_recepies": []}
+}

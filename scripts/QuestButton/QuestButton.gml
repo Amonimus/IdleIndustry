@@ -5,7 +5,7 @@ function QuestButton(_x, _y) : Button(_x, _y) constructor {
 //methods
 	click_action = function(){
 		if wnd == noone {
-			wnd = new TextWindow(64, 64, self, "Quests Quests Quests Quests Quests Quests Quests Quests ")
+			wnd = new TextWindow(64, 64, self, "Quests")
 			array_push(core.window_layer, wnd)
 		}
 	}

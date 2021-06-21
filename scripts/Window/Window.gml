@@ -8,8 +8,8 @@ function Window(_x, _y, _parent) : GameObject(_x, _y) constructor {
 	header = new WindowHeader(x, y, self)
 	close_btn = new WindowClose(x, y, self)
 	resize_btn = new WindowResize(x, y, self)
-	hint_icon = new WindowHint(x, y, self)
-	elements = [header, close_btn, resize_btn, hint_icon]
+	//hint_icon = new WindowHint(x, y, self)
+	elements = [header, close_btn, resize_btn]
 //system
 	draw = function(){
 		draw_rect(x,y,x+width,y+height,c_white,c_black)
