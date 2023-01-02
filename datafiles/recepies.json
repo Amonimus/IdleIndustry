@@ -1,286 +1,753 @@
 [
-{"name": "Explore",
-    "recepies": [{
-	"inputs": [
-        {"name": "Unexplored Land", "need": 1, "consumable": true},
-        {"name": "Caveman", "need": 1, "consumable": false},
-	], "outputs": [
-        {"name": "Mountain", "count": 1},
-        {"name": "Forest", "count": 1},
-    ],
-    "steps": 500
-    }]
-},
-{"name": "Consider",
-    "recepies":[{
-	"inputs": [
-        {"name": "Caveman", "need": 1, "consumable": false},
-	], "outputs": [
-        {"name": "Idea", "count": 1},
-    ],
-    "steps": 200
-    },{
-	"inputs": [
-        {"name": "Caveman", "need": 1, "consumable": false},
-        {"name": "Stone Blueprint 1?", "need": 1, "consumable": true},
-        {"name": "Idea", "need": 10, "consumable": true},
-	], "outputs": [
-        {"name": "Stone Axe Blueprint", "count": 1},
-    ],
-    "steps": 300
-    },{
-	"inputs": [
-        {"name": "Caveman", "need": 1, "consumable": false},
-        {"name": "Stone Blueprint 2?", "need": 1, "consumable": true},
-        {"name": "Idea", "need": 10, "consumable": true},
-	], "outputs": [
-        {"name": "Stone Pickaxe Blueprint", "count": 1},
-    ],
-    "steps": 300
-    },{
-	"inputs": [
-        {"name": "Caveman", "need": 1, "consumable": false},
-        {"name": "Stone Blueprint 3?", "need": 1, "consumable": true},
-        {"name": "Idea", "need": 10, "consumable": true},
-	], "outputs": [
-        {"name": "Stone Spear Blueprint", "count": 1},
-    ],
-    "steps": 300
-    },{
-	"inputs": [
-        {"name": "Caveman", "need": 1, "consumable": false},
-        {"name": "Stone Blueprint 4?", "need": 1, "consumable": true},
-        {"name": "Idea", "need": 20, "consumable": true},
-	], "outputs": [
-        {"name": "Coal Mine Blueprint", "count": 1},
-    ],
-    "steps": 300
-    },{
-	"inputs": [
-        {"name": "Caveman", "need": 1, "consumable": false},
-        {"name": "Stone Blueprint 5?", "need": 1, "consumable": true},
-        {"name": "Idea", "need": 10, "consumable": true},
-	], "outputs": [
-        {"name": "Torch Blueprint", "count": 1},
-    ],
-    "steps": 300
-    },{
-	"inputs": [
-        {"name": "Caveman", "need": 1, "consumable": false},
-        {"name": "Stone Blueprint 6?", "need": 1, "consumable": true},
-        {"name": "Idea", "need": 20, "consumable": true},
-	], "outputs": [
-        {"name": "Stockpile Blueprint", "count": 1},
-    ],
-    "steps": 300
-    },{
-	"inputs": [
-        {"name": "Caveman", "need": 1, "consumable": false},
-        {"name": "Stone Blueprint 7?", "need": 1, "consumable": true},
-        {"name": "Idea", "need": 30, "consumable": true},
-	], "outputs": [
-        {"name": "Hut Blueprint", "count": 1},
-    ],
-    "steps": 300
-    },]
-},
-{"name": "Destroy",
-    "recepies":[{
-	"inputs": [
-        {"name": "Rock", "need": 1, "consumable": true},
-	], "outputs": [
-    ],
-    "steps": 50},{
-	"inputs": [
-        {"name": "Wood", "need": 1, "consumable": true},
-	], "outputs": [
-    ],
-    "steps": 50
-    },{
-	"inputs": [
-        {"name": "Meat", "need": 1, "consumable": true},
-	], "outputs": [
-    ],
-    "steps": 100
-    },{
-	"inputs": [
-        {"name": "Caveman", "need": 1, "consumable": true},
-	], "outputs": [
-        {"name": "Meat", "count": 10},
-        {"name": "Essence of Sin", "count": 10},
-    ],
-    "steps": 20
-    },{
-	"inputs": [
-        {"name": "Coal", "need": 1, "consumable": true},
-	], "outputs": [
-    ],
-    "steps": 50
-    },{
-	"inputs": [
-        {"name": "Stone Pickaxe", "need": 1, "consumable": true},
-	], "outputs": [
-        {"name": "Stick", "count": 1},
-        {"name": "Rock", "count": 1},
-    ],
-    "steps": 100
-    },{
-	"inputs": [
-        {"name": "Stone Axe", "need": 1, "consumable": true},
-	], "outputs": [
-        {"name": "Stick", "count": 1},
-        {"name": "Rock", "count": 1},
-    ],
-    "steps": 100
-    },{
-	"inputs": [
-        {"name": "Torch", "need": 1, "consumable": true},
-	], "outputs": [
-        {"name": "Stick", "count": 1},
-        {"name": "Coal", "count": 1},
-    ],
-    "steps": 100
-    }]
-},
-{"name": "Craft",
-    "recepies": [{
-	"inputs": [
-        {"name": "Caveman", "need": 1, "consumable": false},
-        {"name": "Coal Mine Blueprint", "need": 1, "consumable": false},
-        {"name": "Stone", "need": 10, "consumable": true},
-        {"name": "Wood", "need": 5, "consumable": true},
-	], "outputs": [
-        {"name": "Coal Mine", "count": 1},
-    ],
-    "steps": 400
-    },{
-	"inputs": [
-        {"name": "Caveman", "need": 1, "consumable": false},
-        {"name": "Stone Axe Blueprint", "need": 1, "consumable": false},
-        {"name": "Rock", "need": 3, "consumable": true},
-        {"name": "Stick", "need": 2, "consumable": true},
-	], "outputs": [
-        {"name": "Axe", "count": 1},
-    ],
-    "steps": 300
-    },{
-	"inputs": [
-        {"name": "Caveman", "need": 1, "consumable": false},
-        {"name": "Stone Spear Blueprint", "need": 1, "consumable": false},
-        {"name": "Rock", "need": 2, "consumable": true},
-        {"name": "Stick", "need": 2, "consumable": true},
-	], "outputs": [
-        {"name": "Stone Spear", "count": 1},
-    ],
-    "steps": 300
-    },{
-	"inputs": [
-        {"name": "Caveman", "need": 1, "consumable": false},
-        {"name": "Stone Pickaxe Blueprint", "need": 1, "consumable": false},
-        {"name": "Rock", "need": 3, "consumable": true},
-        {"name": "Stick", "need": 2, "consumable": true},
-	], "outputs": [
-        {"name": "Stone Pickaxe", "count": 1},
-    ],
-    "steps": 300
-    },{
-	"inputs": [
-        {"name": "Caveman", "need": 1, "consumable": false},
-        {"name": "Torch Blueprint", "need": 1, "consumable": false},
-        {"name": "Coal", "need": 2, "consumable": true},
-        {"name": "Stick", "need": 1, "consumable": true},
-	], "outputs": [
-        {"name": "Torch", "count": 1},
-    ],
-    "steps": 300
-    },{
-	"inputs": [
-        {"name": "Caveman", "need": 1, "consumable": false},
-        {"name": "Stockpile Blueprint", "need": 1, "consumable": false},
-        {"name": "Rock", "need": 30, "consumable": true},
-        {"name": "Stick", "need": 20, "consumable": true},
-        {"name": "Torch", "need": 2, "consumable": true},
-	], "outputs": [
-        {"name": "Stockpile", "count": 1},
-    ],
-    "steps": 500
-    },{
-	"inputs": [
-        {"name": "Caveman", "need": 1, "consumable": false},
-        {"name": "Hut Blueprint", "need": 1, "consumable": false},
-        {"name": "Stone", "need": 20, "consumable": true},
-        {"name": "Wood", "need": 30, "consumable": true},
-        {"name": "Torch", "need": 5, "consumable": true},
-	], "outputs": [
-        {"name": "Hut", "count": 1},
-    ],
-    "steps": 500
-    },]
-},
-{"name": "Forest",
-    "recepies":[{
-	"inputs": [
-        {"name": "Caveman", "need": 1, "consumable": false},
-	], "outputs": [
-        {"name": "Stick", "count": 1},
-    ],
-    "steps": 200
-    },{
-	"inputs": [
-        {"name": "Caveman", "need": 1, "consumable": false},
-        {"name": "Stone Axe", "need": 1, "consumable": false},
-	], "outputs": [
-        {"name": "Wood", "count": 1},
-    ],
-    "steps": 400
-    },{
-	"inputs": [
-        {"name": "Caveman", "need": 1, "consumable": false},
-        {"name": "Stone Spear", "need": 1, "consumable": false},
-	], "outputs": [
-        {"name": "Meat", "count": 1},
-    ],
-    "steps": 400
-    }]
-},
-{"name": "Mountain",
-    "recepies":[{
-	"inputs": [
-        {"name": "Caveman", "need": 1, "consumable": false},
-	], "outputs": [
-        {"name": "Rock", "count": 1},
-    ],
-    "steps": 200
-    },{
-	"inputs": [
-        {"name": "Caveman", "need": 1, "consumable": false},
-        {"name": "Stone Pickaxe", "need": 1, "consumable": false},
-	], "outputs": [
-        {"name": "Stone", "count": 1},
-    ],
-    "steps": 400
-    }]
-},
-{"name": "Coal Mine",
-    "recepies":[{
-	"inputs": [
-        {"name": "Caveman", "need": 1, "consumable": false},
-        {"name": "Stone Pickaxe", "need": 1, "consumable": false},
-	], "outputs": [
-        {"name": "Coal", "count": 1},
-    ],
-    "steps": 300
-    }]
-},
-{"name": "Hut",
-    "recepies":[{
-	"inputs": [
-        {"name": "Caveman", "need": 2, "consumable": false},
-        {"name": "Meat", "need": 20, "consumable": true},
-	], "outputs": [
-        {"name": "Caveman", "count": 1},
-    ],
-    "steps": 1000
-    }]
-},
+    {
+        "name": "Explore",
+        "recepies": [
+            {
+                "inputs": [
+                    {
+                        "name": "Unexplored Land",
+                        "need": 1,
+                        "consumable": true
+                    },
+                    {
+                        "name": "Caveman",
+                        "need": 1,
+                        "consumable": false
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Mountain",
+                        "count": 1
+                    },
+                    {
+                        "name": "Forest",
+                        "count": 1
+                    }
+                ],
+                "steps": 500
+            }
+        ]
+    },
+    {
+        "name": "Consider",
+        "recepies": [
+            {
+                "inputs": [
+                    {
+                        "name": "Caveman",
+                        "need": 1,
+                        "consumable": false
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Idea",
+                        "count": 1
+                    }
+                ],
+                "steps": 200
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "Caveman",
+                        "need": 1,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Stone Blueprint 1?",
+                        "need": 1,
+                        "consumable": true
+                    },
+                    {
+                        "name": "Idea",
+                        "need": 10,
+                        "consumable": true
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Stone Axe Blueprint",
+                        "count": 1
+                    }
+                ],
+                "steps": 300
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "Caveman",
+                        "need": 1,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Stone Blueprint 2?",
+                        "need": 1,
+                        "consumable": true
+                    },
+                    {
+                        "name": "Idea",
+                        "need": 10,
+                        "consumable": true
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Stone Pickaxe Blueprint",
+                        "count": 1
+                    }
+                ],
+                "steps": 300
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "Caveman",
+                        "need": 1,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Stone Blueprint 3?",
+                        "need": 1,
+                        "consumable": true
+                    },
+                    {
+                        "name": "Idea",
+                        "need": 10,
+                        "consumable": true
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Stone Spear Blueprint",
+                        "count": 1
+                    }
+                ],
+                "steps": 300
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "Caveman",
+                        "need": 1,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Stone Blueprint 4?",
+                        "need": 1,
+                        "consumable": true
+                    },
+                    {
+                        "name": "Idea",
+                        "need": 20,
+                        "consumable": true
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Coal Mine Blueprint",
+                        "count": 1
+                    }
+                ],
+                "steps": 300
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "Caveman",
+                        "need": 1,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Stone Blueprint 5?",
+                        "need": 1,
+                        "consumable": true
+                    },
+                    {
+                        "name": "Idea",
+                        "need": 10,
+                        "consumable": true
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Torch Blueprint",
+                        "count": 1
+                    }
+                ],
+                "steps": 300
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "Caveman",
+                        "need": 1,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Stone Blueprint 6?",
+                        "need": 1,
+                        "consumable": true
+                    },
+                    {
+                        "name": "Idea",
+                        "need": 20,
+                        "consumable": true
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Stockpile Blueprint",
+                        "count": 1
+                    }
+                ],
+                "steps": 300
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "Caveman",
+                        "need": 1,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Stone Blueprint 7?",
+                        "need": 1,
+                        "consumable": true
+                    },
+                    {
+                        "name": "Idea",
+                        "need": 30,
+                        "consumable": true
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Hut Blueprint",
+                        "count": 1
+                    }
+                ],
+                "steps": 300
+            }
+        ]
+    },
+    {
+        "name": "Destroy",
+        "recepies": [
+            {
+                "inputs": [
+                    {
+                        "name": "Rock",
+                        "need": 1,
+                        "consumable": true
+                    }
+                ],
+                "outputs": [],
+                "steps": 50
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "Wood",
+                        "need": 1,
+                        "consumable": true
+                    }
+                ],
+                "outputs": [],
+                "steps": 50
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "Meat",
+                        "need": 1,
+                        "consumable": true
+                    }
+                ],
+                "outputs": [],
+                "steps": 100
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "Caveman",
+                        "need": 1,
+                        "consumable": true
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Meat",
+                        "count": 10
+                    },
+                    {
+                        "name": "Essence of Sin",
+                        "count": 10
+                    }
+                ],
+                "steps": 20
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "Coal",
+                        "need": 1,
+                        "consumable": true
+                    }
+                ],
+                "outputs": [],
+                "steps": 50
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "Stone Pickaxe",
+                        "need": 1,
+                        "consumable": true
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Stick",
+                        "count": 1
+                    },
+                    {
+                        "name": "Rock",
+                        "count": 1
+                    }
+                ],
+                "steps": 100
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "Stone Axe",
+                        "need": 1,
+                        "consumable": true
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Stick",
+                        "count": 1
+                    },
+                    {
+                        "name": "Rock",
+                        "count": 1
+                    }
+                ],
+                "steps": 100
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "Torch",
+                        "need": 1,
+                        "consumable": true
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Stick",
+                        "count": 1
+                    },
+                    {
+                        "name": "Coal",
+                        "count": 1
+                    }
+                ],
+                "steps": 100
+            }
+        ]
+    },
+    {
+        "name": "Craft",
+        "recepies": [
+            {
+                "inputs": [
+                    {
+                        "name": "Caveman",
+                        "need": 1,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Coal Mine Blueprint",
+                        "need": 1,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Stone",
+                        "need": 10,
+                        "consumable": true
+                    },
+                    {
+                        "name": "Wood",
+                        "need": 5,
+                        "consumable": true
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Coal Mine",
+                        "count": 1
+                    }
+                ],
+                "steps": 400
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "Caveman",
+                        "need": 1,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Stone Axe Blueprint",
+                        "need": 1,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Rock",
+                        "need": 3,
+                        "consumable": true
+                    },
+                    {
+                        "name": "Stick",
+                        "need": 2,
+                        "consumable": true
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Axe",
+                        "count": 1
+                    }
+                ],
+                "steps": 300
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "Caveman",
+                        "need": 1,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Stone Spear Blueprint",
+                        "need": 1,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Rock",
+                        "need": 2,
+                        "consumable": true
+                    },
+                    {
+                        "name": "Stick",
+                        "need": 2,
+                        "consumable": true
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Stone Spear",
+                        "count": 1
+                    }
+                ],
+                "steps": 300
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "Caveman",
+                        "need": 1,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Stone Pickaxe Blueprint",
+                        "need": 1,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Rock",
+                        "need": 3,
+                        "consumable": true
+                    },
+                    {
+                        "name": "Stick",
+                        "need": 2,
+                        "consumable": true
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Stone Pickaxe",
+                        "count": 1
+                    }
+                ],
+                "steps": 300
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "Caveman",
+                        "need": 1,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Torch Blueprint",
+                        "need": 1,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Coal",
+                        "need": 2,
+                        "consumable": true
+                    },
+                    {
+                        "name": "Stick",
+                        "need": 1,
+                        "consumable": true
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Torch",
+                        "count": 1
+                    }
+                ],
+                "steps": 300
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "Caveman",
+                        "need": 1,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Stockpile Blueprint",
+                        "need": 1,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Rock",
+                        "need": 30,
+                        "consumable": true
+                    },
+                    {
+                        "name": "Stick",
+                        "need": 20,
+                        "consumable": true
+                    },
+                    {
+                        "name": "Torch",
+                        "need": 2,
+                        "consumable": true
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Stockpile",
+                        "count": 1
+                    }
+                ],
+                "steps": 500
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "Caveman",
+                        "need": 1,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Hut Blueprint",
+                        "need": 1,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Stone",
+                        "need": 20,
+                        "consumable": true
+                    },
+                    {
+                        "name": "Wood",
+                        "need": 30,
+                        "consumable": true
+                    },
+                    {
+                        "name": "Torch",
+                        "need": 5,
+                        "consumable": true
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Hut",
+                        "count": 1
+                    }
+                ],
+                "steps": 500
+            }
+        ]
+    },
+    {
+        "name": "Forest",
+        "recepies": [
+            {
+                "inputs": [
+                    {
+                        "name": "Caveman",
+                        "need": 1,
+                        "consumable": false
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Stick",
+                        "count": 1
+                    }
+                ],
+                "steps": 200
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "Caveman",
+                        "need": 1,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Stone Axe",
+                        "need": 1,
+                        "consumable": false
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Wood",
+                        "count": 1
+                    }
+                ],
+                "steps": 400
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "Caveman",
+                        "need": 1,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Stone Spear",
+                        "need": 1,
+                        "consumable": false
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Meat",
+                        "count": 1
+                    }
+                ],
+                "steps": 400
+            }
+        ]
+    },
+    {
+        "name": "Mountain",
+        "recepies": [
+            {
+                "inputs": [
+                    {
+                        "name": "Caveman",
+                        "need": 1,
+                        "consumable": false
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Rock",
+                        "count": 1
+                    }
+                ],
+                "steps": 200
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "Caveman",
+                        "need": 1,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Stone Pickaxe",
+                        "need": 1,
+                        "consumable": false
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Stone",
+                        "count": 1
+                    }
+                ],
+                "steps": 400
+            }
+        ]
+    },
+    {
+        "name": "Coal Mine",
+        "recepies": [
+            {
+                "inputs": [
+                    {
+                        "name": "Caveman",
+                        "need": 1,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Stone Pickaxe",
+                        "need": 1,
+                        "consumable": false
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Coal",
+                        "count": 1
+                    }
+                ],
+                "steps": 300
+            }
+        ]
+    },
+    {
+        "name": "Hut",
+        "recepies": [
+            {
+                "inputs": [
+                    {
+                        "name": "Caveman",
+                        "need": 2,
+                        "consumable": false
+                    },
+                    {
+                        "name": "Meat",
+                        "need": 20,
+                        "consumable": true
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Caveman",
+                        "count": 1
+                    }
+                ],
+                "steps": 1000
+            }
+        ]
+    }
 ]

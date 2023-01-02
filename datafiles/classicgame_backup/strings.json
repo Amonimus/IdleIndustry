@@ -1,4 +1,10 @@
 [
-{"name" : "Readme.txt", "text" : "Welcome to Idle Industry. In this game you will lead a tribe to develop technology from rock knives to space rockets. To produce something, the right amount of icons must be inside the specific icons. You can split icons by half with a right click. Note: grey icons = text, yellow/white = items, blue = containers, green = factories, red = actions"},
-{"name" : "Unexplored Land", "text" : "A new place of unkown possabilities."},
+    {
+        "name": "Readme.txt",
+        "text": "Welcome to Idle Industry. In this game you will lead a tribe to develop technology from rock knives to space rockets. To produce something, the right amount of icons must be inside the specific icons. You can split icons by half with a right click. Note: grey icons = text, yellow/white = items, blue = containers, green = factories, red = actions"
+    },
+    {
+        "name": "Unexplored Land",
+        "text": "A new place of unkown possabilities."
+    }
 ]

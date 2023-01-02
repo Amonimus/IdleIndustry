@@ -1,62 +1,170 @@
 [
-	{"inputs": [
-        {"name": "Cookie", "need": 10},
-	], "outputs": [
-        {"name": "Purchase", "count": 1},
-	]},
-	{"inputs": [
-        {"name": "Cookie", "need": 100},
-	], "outputs": [
-        {"name": "Farm", "count": 1},
-	]},
-	{"inputs": [
-        {"name": "Cookie", "need": 1000},
-	], "outputs": [
-        {"name": "Mine", "count": 1},
-	]},
-	{"inputs": [
-        {"name": "Cookie", "need": 10000},
-	], "outputs": [
-        {"name": "Factory", "count": 1},
-	]},
-	{"inputs": [
-        {"name": "Cookie", "need": 100000},
-	], "outputs": [
-        {"name": "Bank", "count": 1},
-	]},
-	{"inputs": [
-        {"name": "Cookie", "need": 1000000},
-	], "outputs": [
-        {"name": "Temple", "count": 1},
-	]},
-	{"inputs": [
-        {"name": "Cookie", "need": 10000000},
-	], "outputs": [
-        {"name": "Wizard Tower", "count": 1},
-	]},
-	{"inputs": [
-        {"name": "Cookie", "need": 100000000},
-	], "outputs": [
-        {"name": "Space Station", "count": 1},
-	]},
-	{"inputs": [
-        {"name": "Cookie", "need": 1000000000},
-	], "outputs": [
-        {"name": "Alchemy Lab", "count": 1},
-	]},
-	{"inputs": [
-        {"name": "Cookie", "need": 10000000000},
-	], "outputs": [
-        {"name": "Portal", "count": 1},
-	]},
-	{"inputs": [
-        {"name": "Cookie", "need": 100000000000},
-	], "outputs": [
-        {"name": "Time Machine", "count": 1},
-	]},
-	{"inputs": [
-        {"name": "Cookie", "need": 1000000000000},
-	], "outputs": [
-        {"name": "Antimatter Condenser", "count": 1},
-	]},
+    {
+        "inputs": [
+            {
+                "name": "Cookie",
+                "need": 10
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Purchase",
+                "count": 1
+            }
+        ]
+    },
+    {
+        "inputs": [
+            {
+                "name": "Cookie",
+                "need": 100
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Farm",
+                "count": 1
+            }
+        ]
+    },
+    {
+        "inputs": [
+            {
+                "name": "Cookie",
+                "need": 1000
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Mine",
+                "count": 1
+            }
+        ]
+    },
+    {
+        "inputs": [
+            {
+                "name": "Cookie",
+                "need": 10000
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Factory",
+                "count": 1
+            }
+        ]
+    },
+    {
+        "inputs": [
+            {
+                "name": "Cookie",
+                "need": 100000
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Bank",
+                "count": 1
+            }
+        ]
+    },
+    {
+        "inputs": [
+            {
+                "name": "Cookie",
+                "need": 1000000
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Temple",
+                "count": 1
+            }
+        ]
+    },
+    {
+        "inputs": [
+            {
+                "name": "Cookie",
+                "need": 10000000
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Wizard Tower",
+                "count": 1
+            }
+        ]
+    },
+    {
+        "inputs": [
+            {
+                "name": "Cookie",
+                "need": 100000000
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Space Station",
+                "count": 1
+            }
+        ]
+    },
+    {
+        "inputs": [
+            {
+                "name": "Cookie",
+                "need": 1000000000
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Alchemy Lab",
+                "count": 1
+            }
+        ]
+    },
+    {
+        "inputs": [
+            {
+                "name": "Cookie",
+                "need": 10000000000
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Portal",
+                "count": 1
+            }
+        ]
+    },
+    {
+        "inputs": [
+            {
+                "name": "Cookie",
+                "need": 100000000000
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Time Machine",
+                "count": 1
+            }
+        ]
+    },
+    {
+        "inputs": [
+            {
+                "name": "Cookie",
+                "need": 1000000000000
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Antimatter Condenser",
+                "count": 1
+            }
+        ]
+    }
 ]

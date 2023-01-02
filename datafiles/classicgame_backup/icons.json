@@ -1,13 +1,62 @@
 [
-{"name" : "Explore", "class" : "Action", "sprite" : "lense.png"},
-{"name" : "Craft", "class" : "Action", "sprite" : "craft.png"},
-{"name" : "Consider", "class" : "Action", "sprite" : "consider.png"},
-{"name" : "Destroy", "class" : "Action", "sprite" : "destroy.png"},
-{"name" : "Caveman", "class" : "Resource", "sprite" : "person.png"},
-{"name" : "Unexplored Land", "class" : "Text", "sprite" : "text.png"},
-{"name" : "Readme.txt", "class" : "Text", "sprite" : "text.png"},
-{"name" : "Mountain", "class" : "Factory", "sprite" : "factory.png"},
-{"name" : "Forest", "class" : "Factory", "sprite" : "factory.png"},
-{"name" : "Coal Mine", "class" : "Factory", "sprite" : "factory.png"},
-{"name" : "Hut", "class" : "Factory", "sprite" : "factory.png"},
+    {
+        "name": "Explore",
+        "class": "Action",
+        "sprite": "lense.png"
+    },
+    {
+        "name": "Craft",
+        "class": "Action",
+        "sprite": "craft.png"
+    },
+    {
+        "name": "Consider",
+        "class": "Action",
+        "sprite": "consider.png"
+    },
+    {
+        "name": "Destroy",
+        "class": "Action",
+        "sprite": "destroy.png"
+    },
+    {
+        "name": "Caveman",
+        "class": "Resource",
+        "sprite": "person.png"
+    },
+    {
+        "name": "Unexplored Land",
+        "class": "Text",
+        "sprite": "text.png"
+    },
+    {
+        "name": "Readme.txt",
+        "class": "Text",
+        "sprite": "text.png"
+    },
+    {
+        "name": "Mountain",
+        "class": "Factory",
+        "sprite": "factory.png"
+    },
+    {
+        "name": "Forest",
+        "class": "Factory",
+        "sprite": "factory.png"
+    },
+    {
+        "name": "Coal Mine",
+        "class": "Factory",
+        "sprite": "factory.png"
+    },
+    {
+        "name": "Stockpile",
+        "class": "Container",
+        "sprite": "container.png"
+    },
+    {
+        "name": "Hut",
+        "class": "Factory",
+        "sprite": "factory.png"
+    }
 ]

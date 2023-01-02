@@ -1,21 +1,92 @@
 [
-	{"inputs": [
-        {"name": "Stick", "need": 10},
-        {"name": "Rock", "need": 10},
-	], "outputs": [
-        {"name": "Stone Blueprint 1?", "count": 1},
-        {"name": "Stone Blueprint 2?", "count": 1},
-        {"name": "Stone Blueprint 3?", "count": 1},
-	]},
-    {"inputs": [
-        {"name": "Wood", "need": 10},
-        {"name": "Stone", "need": 10},
-	], "outputs": [
-        {"name": "Stone Blueprint 4?", "count": 1},
-	]},
-    {"inputs": [
-        {"name": "Coal", "need": 10},
-	], "outputs": [
-        {"name": "Stone Blueprint 5?", "count": 1},
-	]}
+    {
+        "inputs": [
+            {
+                "name": "Stick",
+                "need": 10
+            },
+            {
+                "name": "Rock",
+                "need": 10
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Stone Blueprint 1?",
+                "count": 1
+            },
+            {
+                "name": "Stone Blueprint 2?",
+                "count": 1
+            },
+            {
+                "name": "Stone Blueprint 3?",
+                "count": 1
+            }
+        ]
+    },
+    {
+        "inputs": [
+            {
+                "name": "Wood",
+                "need": 10
+            },
+            {
+                "name": "Stone",
+                "need": 10
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Stone Blueprint 4?",
+                "count": 1
+            }
+        ]
+    },
+    {
+        "inputs": [
+            {
+                "name": "Coal",
+                "need": 10
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Stone Blueprint 5?",
+                "count": 1
+            }
+        ]
+    },
+    {
+        "inputs": [
+            {
+                "name": "Torch",
+                "need": 5
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Stone Blueprint 6?",
+                "count": 1
+            },
+            {
+                "name": "Stone Blueprint 7?",
+                "count": 1
+            }
+        ]
+    },
+    {
+        "inputs": [
+            {
+                "name": "Caveman",
+                "need": 10
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Trophy",
+                "count": 1
+            }
+        ]
+    }
 ]

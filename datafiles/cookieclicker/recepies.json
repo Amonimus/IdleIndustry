@@ -1,132 +1,275 @@
 [
-{"name": "Purchase",
-    "recepies": [{
-	"inputs": [
-        {"name": "Cookie", "need": 5, "consumable": true},
-	], "outputs": [
-        {"name": "Grandma", "count": 1},
-    ],
-    "steps": 100
-    }]
-},
-{"name": "Bakery",
-    "recepies": [{
-	"inputs": [
-        {"name": "Grandma", "need": 1, "consumable": false},
-	], "outputs": [
-        {"name": "Cookie", "count": 1},
-    ],
-    "steps": 1000
-    }]
-},
-{"name": "Farm",
-    "recepies": [{
-	"inputs": [
-        {"name": "Grandma", "need": 1, "consumable": false},
-	], "outputs": [
-        {"name": "Cookie", "count": 1},
-    ],
-    "steps": 500
-    }]
-},
-{"name": "Mine",
-    "recepies": [{
-	"inputs": [
-        {"name": "Grandma", "need": 1, "consumable": false},
-	], "outputs": [
-        {"name": "Cookie", "count": 1},
-    ],
-    "steps": 200
-    }]
-},
-{"name": "Factory",
-    "recepies": [{
-	"inputs": [
-        {"name": "Grandma", "need": 1, "consumable": false},
-	], "outputs": [
-        {"name": "Cookie", "count": 1},
-    ],
-    "steps": 100
-    }]
-},
-{"name": "Bank",
-    "recepies": [{
-	"inputs": [
-        {"name": "Grandma", "need": 1, "consumable": false},
-	], "outputs": [
-        {"name": "Cookie", "count": 1},
-    ],
-    "steps": 50
-    }]
-},
-{"name": "Temple",
-    "recepies": [{
-	"inputs": [
-        {"name": "Grandma", "need": 1, "consumable": false},
-	], "outputs": [
-        {"name": "Cookie", "count": 1},
-    ],
-    "steps": 20
-    }]
-},
-{"name": "Wizard Tower",
-    "recepies": [{
-	"inputs": [
-        {"name": "Grandma", "need": 1, "consumable": false},
-	], "outputs": [
-        {"name": "Cookie", "count": 1},
-    ],
-    "steps": 10
-    }]
-},
-{"name": "Space Station",
-    "recepies": [{
-	"inputs": [
-        {"name": "Grandma", "need": 1, "consumable": false},
-	], "outputs": [
-        {"name": "Cookie", "count": 5},
-    ],
-    "steps": 10
-    }]
-},
-{"name": "Alchemy Lab",
-    "recepies": [{
-	"inputs": [
-        {"name": "Grandma", "need": 1, "consumable": false},
-	], "outputs": [
-        {"name": "Cookie", "count": 20},
-    ],
-    "steps": 10
-    }]
-},
-{"name": "Portal",
-    "recepies": [{
-	"inputs": [
-        {"name": "Grandma", "need": 1, "consumable": false},
-	], "outputs": [
-        {"name": "Cookie", "count": 100},
-    ],
-    "steps": 10
-    }]
-},
-{"name": "Time Machine",
-    "recepies": [{
-	"inputs": [
-        {"name": "Grandma", "need": 1, "consumable": false},
-	], "outputs": [
-        {"name": "Cookie", "count": 200},
-    ],
-    "steps": 10
-    }]
-},
-{"name": "Antimatter Condenser",
-    "recepies": [{
-	"inputs": [
-        {"name": "Grandma", "need": 1, "consumable": false},
-	], "outputs": [
-        {"name": "Cookie", "count": 500},
-    ],
-    "steps": 10
-    }]
-},
+    {
+        "name": "Purchase",
+        "recepies": [
+            {
+                "inputs": [
+                    {
+                        "name": "Cookie",
+                        "need": 5,
+                        "consumable": true
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Grandma",
+                        "count": 1
+                    }
+                ],
+                "steps": 100
+            }
+        ]
+    },
+    {
+        "name": "Bakery",
+        "recepies": [
+            {
+                "inputs": [
+                    {
+                        "name": "Grandma",
+                        "need": 1,
+                        "consumable": false
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Cookie",
+                        "count": 1
+                    }
+                ],
+                "steps": 1000
+            }
+        ]
+    },
+    {
+        "name": "Farm",
+        "recepies": [
+            {
+                "inputs": [
+                    {
+                        "name": "Grandma",
+                        "need": 1,
+                        "consumable": false
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Cookie",
+                        "count": 1
+                    }
+                ],
+                "steps": 500
+            }
+        ]
+    },
+    {
+        "name": "Mine",
+        "recepies": [
+            {
+                "inputs": [
+                    {
+                        "name": "Grandma",
+                        "need": 1,
+                        "consumable": false
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Cookie",
+                        "count": 1
+                    }
+                ],
+                "steps": 200
+            }
+        ]
+    },
+    {
+        "name": "Factory",
+        "recepies": [
+            {
+                "inputs": [
+                    {
+                        "name": "Grandma",
+                        "need": 1,
+                        "consumable": false
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Cookie",
+                        "count": 1
+                    }
+                ],
+                "steps": 100
+            }
+        ]
+    },
+    {
+        "name": "Bank",
+        "recepies": [
+            {
+                "inputs": [
+                    {
+                        "name": "Grandma",
+                        "need": 1,
+                        "consumable": false
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Cookie",
+                        "count": 1
+                    }
+                ],
+                "steps": 50
+            }
+        ]
+    },
+    {
+        "name": "Temple",
+        "recepies": [
+            {
+                "inputs": [
+                    {
+                        "name": "Grandma",
+                        "need": 1,
+                        "consumable": false
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Cookie",
+                        "count": 1
+                    }
+                ],
+                "steps": 20
+            }
+        ]
+    },
+    {
+        "name": "Wizard Tower",
+        "recepies": [
+            {
+                "inputs": [
+                    {
+                        "name": "Grandma",
+                        "need": 1,
+                        "consumable": false
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Cookie",
+                        "count": 1
+                    }
+                ],
+                "steps": 10
+            }
+        ]
+    },
+    {
+        "name": "Space Station",
+        "recepies": [
+            {
+                "inputs": [
+                    {
+                        "name": "Grandma",
+                        "need": 1,
+                        "consumable": false
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Cookie",
+                        "count": 5
+                    }
+                ],
+                "steps": 10
+            }
+        ]
+    },
+    {
+        "name": "Alchemy Lab",
+        "recepies": [
+            {
+                "inputs": [
+                    {
+                        "name": "Grandma",
+                        "need": 1,
+                        "consumable": false
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Cookie",
+                        "count": 20
+                    }
+                ],
+                "steps": 10
+            }
+        ]
+    },
+    {
+        "name": "Portal",
+        "recepies": [
+            {
+                "inputs": [
+                    {
+                        "name": "Grandma",
+                        "need": 1,
+                        "consumable": false
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Cookie",
+                        "count": 100
+                    }
+                ],
+                "steps": 10
+            }
+        ]
+    },
+    {
+        "name": "Time Machine",
+        "recepies": [
+            {
+                "inputs": [
+                    {
+                        "name": "Grandma",
+                        "need": 1,
+                        "consumable": false
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Cookie",
+                        "count": 200
+                    }
+                ],
+                "steps": 10
+            }
+        ]
+    },
+    {
+        "name": "Antimatter Condenser",
+        "recepies": [
+            {
+                "inputs": [
+                    {
+                        "name": "Grandma",
+                        "need": 1,
+                        "consumable": false
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "Cookie",
+                        "count": 500
+                    }
+                ],
+                "steps": 10
+            }
+        ]
+    }
 ]

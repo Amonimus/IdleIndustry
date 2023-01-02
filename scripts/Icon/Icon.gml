@@ -53,19 +53,19 @@ function Icon(_x, _y, _inner_text, _count) : Draggable(_x, _y) constructor {
 		draw_set_valign(fa_middle)
 		if display_mode == 1 {
 			draw_set_halign(fa_center)
-			draw_text_outlined(x+(width/2), y+height+8, 3*width, inner_text, color, c_black)
+			draw_text_outlined_ext(x+(width/2), y+height+8, 3*width, inner_text, color, c_black)
 		} else {
 			draw_set_halign(fa_left)
-			draw_text_outlined(x+width+8, y+(height/2), 3*width, inner_text, color, c_black)
+			draw_text_outlined_ext(x+width+8, y+(height/2), 3*width, inner_text, color, c_black)
 		}		
 		if count > 1 {
 			draw_set_halign(fa_center)
-			draw_text_outlined(x+width, y+height, 1000, string(count), c_white, c_black)			
+			draw_text_outlined(x+width, y+height, string(count), c_white, c_black)			
 		}
 		debug("")
 	}
 	debug = function(_str){
-		draw_text_outlined(x+width, y, 4*width, _str, c_red, c_green)	
+		draw_text_outlined_ext(x+width, y, 4*width, _str, c_red, c_green)	
 	}
 	link = function(_icon){
 		array_push(children, _icon)
